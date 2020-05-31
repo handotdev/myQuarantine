@@ -1,6 +1,2 @@
 # myQuarantine
-# myQuarantine
-# myQuarantine
-# myQuarantine
-# myQuarantine
-# myQuarantine
+For ORIGIN Education
