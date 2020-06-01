@@ -8,24 +8,28 @@ export default function Discover() {
     const [users, setUsers] = useState([
         {
             name: "Colton Underwood",
+            email: "colton@bachelor.com",
             image: "https://i.insider.com/5e84a14392e191478763ef84?width=1100&format=jpeg&auto=webp",
             age: 24,
             bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut egestas."
         },
         {
             name: "Nick Viall",
+            email: "nick@bachelor.com",
             image: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/nickviall-89747516-251757629322778-1879807299067145470-n-1586800462.jpg",
             age: 27,
             bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut egestas."
         },
         {
             name: "Sean Lowe",
+            email: "sean@bachelor.com",
             image: "https://media4.s-nbcnews.com/j/streams/2013/March/130314/1C6440809-tdy-130312-sean-lowe.fit-760w.jpg",
             age: 24,
             bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut egestas."
         },
         {
             name: "Ben Higgins",
+            email: "ben@bachelor.com",
             image: "https://pbs.twimg.com/profile_images/914986782063681536/RWAXB-2C.jpg",
             age: 21,
             bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut egestas."
@@ -38,7 +42,7 @@ export default function Discover() {
     <ScrollView style={styles.container}>
       <Text style={styles.title}>Discover</Text>
       {
-          users.map((user, i) => <Card key={i} name={user.name} image={user.image} age={user.age} bio={user.bio}/> )
+          users.map((user, i) => <Card key={i} name={user.name} email={user.email} image={user.image} age={user.age} bio={user.bio}/> )
       }
     </ScrollView>
   );

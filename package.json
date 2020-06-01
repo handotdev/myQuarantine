@@ -22,7 +22,8 @@
     "react-native-screens": "~2.2.0",
     "react-native-vector-icons": "^6.6.0",
     "react-native-web": "~0.11.7",
-    "undefined": "@expo/vector-icons/Ionicons"
+    "undefined": "@expo/vector-icons/Ionicons",
+    "expo-linking": "~1.0.1"
   },
   "devDependencies": {
     "babel-preset-expo": "~8.1.0",

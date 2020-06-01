@@ -1,8 +1,15 @@
 import React from 'react';
-import { StyleSheet, Text, View, Image } from 'react-native';
+import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native';
+import * as Linking from 'expo-linking';
 
 export default function Card(props) {
+
+  const sendEmail = (email) => {
+    Linking.openURL(`mailto:${email}`);
+  }
+
   return (
+    <TouchableOpacity onPress={() => sendEmail(props.email)}>
       <View style={styles.userCard}>
         <Image
           style={styles.profilePic}
@@ -13,6 +20,7 @@ export default function Card(props) {
             <Text style={styles.userText}>{props.bio}</Text>
          </View>
       </View>
+    </TouchableOpacity>
   );
 }
 
