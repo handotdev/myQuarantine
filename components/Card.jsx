@@ -1,16 +1,16 @@
 import React from 'react';
 import { StyleSheet, Text, View, Image } from 'react-native';
 
-export default function Card() {
+export default function Card(props) {
   return (
       <View style={styles.userCard}>
         <Image
           style={styles.profilePic}
-          source={{uri: "https://i.insider.com/5e84a14392e191478763ef84?width=1100&format=jpeg&auto=webp"}}
+          source={{uri: props.image}}
          />
          <View style={styles.textContainer}>
-            <Text style={[styles.userText, styles.nameText]}>Colton Underwood <Text style={styles.nameTextBold}>23</Text></Text>
-            <Text style={styles.userText}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut egestas.</Text>
+            <Text style={[styles.userText, styles.nameText]}>{props.name} <Text style={styles.nameTextBold}>{props.age}</Text></Text>
+            <Text style={styles.userText}>{props.bio}</Text>
          </View>
       </View>
   );
